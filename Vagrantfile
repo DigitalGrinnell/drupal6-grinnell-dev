@@ -1,5 +1,5 @@
 ## drupal6-grinnell-dev\Vagrantfile
-## This Vagrantfile builds a grinnell.dev BASE VM image.
+## This Vagrantfile builds a grinnell.dev DRUPAL 6 VM image.
 
 Vagrant.configure("2") do |config|
 
@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
      end
 
   ## Give our guest a name.
-     config.vm.host_name = "drupal6.grinnell.dev"
+     config.vm.host_name = "drupal6.grinnell.dev"       ## Attention!
 
   ## Every Vagrant virtual environment requires a box to build off of.
      config.vm.box = "precise64_vmware"
@@ -56,7 +56,7 @@ Vagrant.configure("2") do |config|
   ## Enable the Puppet provisioner, which will look in manifests
      config.vm.provision :puppet do |puppet|
        puppet.manifests_path = "manifests"
-       puppet.manifest_file = "default.pp"
+       puppet.manifest_file = "drupal6.pp"               ## Attention!
        puppet.module_path = "modules"
        puppet.options = "--verbose "  # --debug"
      end
