@@ -1,5 +1,5 @@
 #!/bin/bash
-# This is dynmotd.sh, as part of Puppet module "dynmotd".  
+# This is dynmotd.sh, as part of Puppet module "dynmotd".
 PROCCOUNT=`ps -Afl | wc -l`
 PROCCOUNT=`expr $PROCCOUNT - 5`
 GROUPZ=`groups`

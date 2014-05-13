@@ -11,7 +11,9 @@ Vagrant.configure("2") do |config|
      end
 
   ## Give our guest a name.
-     config.vm.host_name = "drupal6.grinnell.dev"       ## Attention!
+     config.vm.hostname = "drupal6.grinnell.dev"        ## Attention!
+     config.vm.define "drupal6" do |drupal6|            ## Attention!
+     end
 
   ## Every Vagrant virtual environment requires a box to build off of.
      config.vm.box = "precise64_vmware"

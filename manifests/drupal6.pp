@@ -1,4 +1,4 @@
-## manifests\default.pp
+## manifests\drupal6.pp
 ## This is the main manifest.
 
 ## Define some required parameters
