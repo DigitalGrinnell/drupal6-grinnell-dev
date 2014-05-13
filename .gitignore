@@ -1,0 +1,6 @@
+vagrant
+.vagrant
+.idea
+webroot
+.DS_Store
+/nbproject/private/
